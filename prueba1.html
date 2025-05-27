@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Validación</title>
+    
 </head>
 <body>
 
     <form id="miFormulario">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre">
+        <input type="text" id="nombre" name="nombre" >
         <span class="error" id="errorNombre"></span>
         <br>
 
@@ -17,6 +18,7 @@
         <input type="email" id="email" name="email">
         <span class="error" id="errorEmail"></span>
         <br>
+
         
         <button type="button" onclick="validar()" id="btn">Enviar</button>
     </form>
@@ -29,8 +31,13 @@
                 <th>accion</th>
             </tr>
         </thead>
-        <tbody id="cuerpoTabla"></tbody>
+        <tbody id="cuerpoTabla">
+
+        </tbody>
     </table>
+
+     <!-- ESTA LÍNEA ES FUNDAMENTAL -->
+    <script src="script1.js"></script>
 
 </body>
 </html>

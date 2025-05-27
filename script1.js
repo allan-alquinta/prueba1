@@ -1,7 +1,7 @@
 //validar nombre, debe contener solo letras y no ser vacio
 //validar correo: Debe tener solo un @ y terminar en .cl
 
-let datos = []; // variable global para almacenar la información
+let datos = []; // variable global para guardar los datos
 
 function validar() {
     let nombre = document.getElementById("nombre").value.trim();
@@ -27,7 +27,7 @@ function validar() {
     }
 
     if (valido) {
-        datos.push({ nombre, email }); // guardar en variable global
+        datos.push({ nombre, email });
         mostrarTabla();
         limpiarFormulario();
     }
@@ -62,7 +62,6 @@ function editar(index) {
     document.getElementById("nombre").value = dato.nombre;
     document.getElementById("email").value = dato.email;
 
-    // Reemplazamos el botón por uno de "Actualizar"
     let btn = document.getElementById("btn");
     btn.textContent = "Actualizar";
     btn.onclick = function () {
